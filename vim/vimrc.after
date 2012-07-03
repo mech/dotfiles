@@ -3,7 +3,9 @@ colorscheme xoria256
 command! W :w
 command! Q :q
 
+set cursorline
 set cmdheight=2
+set history=10000
 
 autocmd FileType ruby setlocal foldmethod=syntax
 autocmd FileType css setlocal foldmethod=indent shiftwidth=2 tabstop=2
