@@ -18,6 +18,9 @@ nmap <space> zz
 :nnoremap <CR> :nohlsearch<cr>
 nnoremap <leader><leader> <c-^>
 
+" Status line
+:set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
+
 " Arrow keys are unacceptable
 map <Left> :echo "HJKL only!"<cr>
 map <Right> :echo "HJKL only!"<cr>
