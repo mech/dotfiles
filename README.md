@@ -8,4 +8,3 @@
 - 150 * 50
 - Selection: #ca4127
 - Background: #292b2e
-

@@ -1,0 +1,24 @@
+[user]
+  name = mech
+  email = mech@me.com
+[alias]
+  co = checkout
+  st = status -sb
+  br = branch
+  di = diff
+  head = !git l -1
+  h = !git head
+  hp = "!. ~/.githelpers && show_git_head"
+  r = !git l -30
+  ra = !git r --all
+  l = "!. ~/.githelpers && pretty_git_log"
+  la = !git l --all
+[apply]
+  whitespace = nowarn
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+[core]
+  editor = vim
