@@ -16,9 +16,17 @@
 [apply]
   whitespace = nowarn
 [color]
+  ui = auto
   branch = auto
   diff = auto
   interactive = auto
   status = auto
 [core]
   editor = vim
+  excludesfile = /Users/mech/.gitignore
+[push]
+  default = simple
+[pull]
+  rebase = true
+[merge]
+  tool = vimdiff

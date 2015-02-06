@@ -8,3 +8,7 @@
 - 150 * 50
 - Selection: #ca4127
 - Background: #292b2e
+
+# Inspired by
+
+- [Gary Bernhardt](https://github.com/garybernhardt/dotfiles)

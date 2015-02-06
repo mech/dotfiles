@@ -1,20 +1,37 @@
 # ZSH_THEME="wedisagree"
 
 export EDITOR=vi
+
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
 export JAVA_HOME=$(/usr/libexec/java_home)
 export MAVEN_HOME='/usr/share/maven/'
 export ANT_HOME='/usr/share/ant/'
-export PSQL_USERNAME=
+
+export CP_POSTMARK_API_KEY=
+export JOBLINE_POSTMARK_API_KEY=
+
+export FILEMAKER_HOST=
+export FILEMAKER_ACCOUNT_NAME=
+export FILEMAKER_PASSWORD=
+
 export SMBGLOBAL_USERNAME=
 export SMBGLOBAL_PASSWORD=
+
+export PSQL_USERNAME=
 export FILEMAKER_ASSETS_PATH='private/assets/filemaker_assets'
 export NODE_PATH='/usr/local/share/npm/lib/node_modules'
 
-RPROMPT='%{$fg[white]%} $(~/.rvm/bin/rvm-prompt)%{$reset_color%}'
+# Nicer history
+export HISTSIZE=100000
+export HISTFILE="$HOME/.history"
+export SAVEHIST=$HISTSIZE
+
+# RPROMPT='%{$fg[white]%} $(~/.rvm/bin/rvm-prompt)%{$reset_color%}'
+RPROMPT='%{$fg[white]%} $(rbenv version | sed -e "s/ (set.*$//")%{$reset_color%}'
 
 eval "$(hub alias -s)"
 
-export PATH=$JAVA_HOME/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin
+# export PATH=$JAVA_HOME/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin

@@ -1,0 +1,6 @@
+alias k='clear'
+alias q='exit'
+alias e='atom .'
+
+alias remote='ssh -p 16111 administrator@58.XXX.XXX.XXX'
+alias jobline='cd /Users/mech/Work/Source/Company/Current/jobline.com.sg'
