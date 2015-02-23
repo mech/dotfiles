@@ -24,6 +24,8 @@ export PSQL_USERNAME=
 export FILEMAKER_ASSETS_PATH='private/assets/filemaker_assets'
 export NODE_PATH='/usr/local/share/npm/lib/node_modules'
 
+export GOPATH=$HOME/go
+
 # Nicer history
 export HISTSIZE=100000
 export HISTFILE="$HOME/.history"
@@ -32,6 +34,22 @@ export SAVEHIST=$HISTSIZE
 # RPROMPT='%{$fg[white]%} $(~/.rvm/bin/rvm-prompt)%{$reset_color%}'
 RPROMPT='%{$fg[white]%} $(rbenv version | sed -e "s/ (set.*$//")%{$reset_color%}'
 
+alias k=clear
+alias q=exit
+alias e='atom .'
+alias server='python -m SimpleHTTPServer'
+
+alias remote='ssh -p 16111 user@ip'
+alias jobline='cd /Users/mech/W/C/jobline'
+
+alias gs='echo ""; echo "*********************************************"; echo -e "   DO NOT FORGET TO PULL BEFORE COMMITTING"; echo "*********************************************"; echo ""; git status'
+
+# Git log find
+function glf() { git ra --grep="$1"; }
+
 eval "$(hub alias -s)"
 
 # export PATH=$JAVA_HOME/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin
+# export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$GOPATH/bin"
+
+# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
