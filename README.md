@@ -1,7 +1,5 @@
 # Dotfiles
 
-- Keep adding them if possible
-
 ## Terminal
 
 - Anonymous Pro 18 pt
@@ -13,45 +11,48 @@
 
 - SourceCodePro-Light
 - OfficeCodePro-Light
+- Fira Code
 
-css-comb
-editorconfig
-autocomplete-snippets
-autocomplete-plus
-emmet
-linter
-linter-csslint
-linter-eslint
-linter-htmlhint
-linter-scss-lint
-react
-vim-mode
+**Packages**
+
+- css-comb
+- editorconfig
+- autocomplete-snippets
+- autocomplete-plus
+- emmet
+- linter
+- linter-csslint
+- linter-eslint
+- linter-htmlhint
+- linter-scss-lint
+- react
+- vim-mode
 
 ## Vim
 
-CSScomb-for-Vim
-ctrlp.vim
-tlib_vim
-Dockerfile
-emmet-vim
-auto-pairs
-supertab
-bufexplorer
-syntastic
-vim-addon-mw-utils
-vim-git
-vim-jsx
-vim-snippets
-vim-gitgutter
-vim-rails
-vim-surround
-vim-bundler
-vim-go
-vim-ruby
-vim-trailing-whitespace
-vim-fugitive
-vim-javascript
-vim-snipmate
+- CSScomb-for-Vim
+- ctrlp.vim
+- tlib_vim
+- Dockerfile
+- emmet-vim
+- auto-pairs
+- supertab
+- bufexplorer
+- syntastic
+- vim-addon-mw-utils
+- vim-git
+- vim-jsx
+- vim-snippets
+- vim-gitgutter
+- vim-rails
+- vim-surround
+- vim-bundler
+- vim-go
+- vim-ruby
+- vim-trailing-whitespace
+- vim-fugitive
+- vim-javascript
+- vim-snipmate
 
 ## Inspired by
 
