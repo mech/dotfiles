@@ -23,6 +23,7 @@
   status = auto
 [core]
   editor = vim
+  autocrlf = true
   excludesfile = /Users/mech/.gitignore
 [push]
   default = simple
