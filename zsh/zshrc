@@ -1,4 +1,4 @@
-# ZSH_THEME="wedisagree"
+ZSH_THEME="mech"
 
 export EDITOR=vi
 
@@ -6,12 +6,17 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+export HISTSIZE=100000
+export HISTFILE="$HOME/.history"
+export SAVEHIST=$HISTSIZE
+export HISTIGNORE="&:[  ]*:exit:ls:bg:fg:history:clear:q"
+export HISTCONTROL=ignoreboth:erasedups
+
 export JAVA_HOME=$(/usr/libexec/java_home)
 export MAVEN_HOME='/usr/share/maven/'
 export ANT_HOME='/usr/share/ant/'
 
-export CP_POSTMARK_API_KEY=
-export JOBLINE_POSTMARK_API_KEY=
+export POSTMARK_API_KEY=
 
 export FILEMAKER_HOST=
 export FILEMAKER_ACCOUNT_NAME=
@@ -20,26 +25,19 @@ export FILEMAKER_PASSWORD=
 export SMBGLOBAL_USERNAME=
 export SMBGLOBAL_PASSWORD=
 
-export PSQL_USERNAME=
-export FILEMAKER_ASSETS_PATH='private/assets/filemaker_assets'
-export NODE_PATH='/usr/local/share/npm/lib/node_modules'
-
 export GOPATH=$HOME/go
 
-# Nicer history
-export HISTSIZE=100000
-export HISTFILE="$HOME/.history"
-export SAVEHIST=$HISTSIZE
-
-# RPROMPT='%{$fg[white]%} $(~/.rvm/bin/rvm-prompt)%{$reset_color%}'
 RPROMPT='%{$fg[white]%} $(rbenv version | sed -e "s/ (set.*$//")%{$reset_color%}'
 
 alias k=clear
 alias q=exit
+alias qq=exit
 alias e='atom .'
 alias server='python -m SimpleHTTPServer'
 
-alias remote='ssh -p 16111 user@ip'
+alias remote='ssh -p 16111 administrator@ip'
+alias valkyrie='ssh -p 16111 deploy@ip'
+
 alias jobline='cd /Users/mech/W/C/jobline'
 
 alias gs='echo ""; echo "*********************************************"; echo -e "   DO NOT FORGET TO PULL BEFORE COMMITTING"; echo "*********************************************"; echo ""; git status'
@@ -49,7 +47,7 @@ function glf() { git ra --grep="$1"; }
 
 eval "$(hub alias -s)"
 
-# export PATH=$JAVA_HOME/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin
-# export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$GOPATH/bin"
+alias pull='git pull origin $(current_branch)'
+alias push='git push origin $(current_branch)'
 
-# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+eval "$(rbenv init -)"
