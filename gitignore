@@ -1,10 +1,9 @@
+.idea
+.ruby-version
 .DS_Store
 Thumbs.db
+.vscode
+npm-debug.log
+node_modules
+coverage
 
-*.tmproj
-tmtags
-
-*.swp
-
-.idea
-.redcar
