@@ -25,6 +25,8 @@
   editor = vim
   autocrlf = true
   excludesfile = /Users/mech/.gitignore
+[credential]
+	helper = osxkeychain
 [push]
   default = simple
 [pull]
